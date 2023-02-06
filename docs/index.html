@@ -12,11 +12,32 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+        name: 'nowol79 Study Agit',
+        repo: 'https://github.com/nowol79/study',
+        loadSidebar: '_sidebar.md',
+        auto2top: true,
+        maxLevel: 3,
+        subMaxLevel: 3,
+        requestHeaders: {
+            'cache-control': 'max-age=0'
+        },
+        tabs: {
+            theme: 'material'
+        },
+        search: {
+            maxAge: 600, // Expiration time, default: 86400000 (one day)
+            depth: 3
+        }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-rego.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+
 </body>
 </html>
